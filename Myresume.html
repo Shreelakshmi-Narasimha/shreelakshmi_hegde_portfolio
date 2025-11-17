@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shreelakshmi Hegde — Android Developer</title>
+  <meta name="description" content="Shreelakshmi Hegde — Android Developer (Kotlin, Jetpack Compose, Firebase). Portfolio & projects." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7c3aed;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{background:linear-gradient(180deg,#071023 0%, #071a2a 100%);color:#e6eef6;padding:36px}
+    .container{max-width:980px;margin:0 auto}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2dd4bf);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    h1{margin:0;font-size:28px}
+    .lead{color:var(--muted);margin-top:6px}
+    .cta{display:flex;gap:10px}
+    a.btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    a.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#cfe6ff;padding:8px 12px;border-radius:10px;text-decoration:none}
+
+    main{margin-top:28px;display:grid;grid-template-columns:1fr 320px;gap:24px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .projects .project{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
+    .proj-thumb{width:88px;height:68px;border-radius:8px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:600;color:var(--muted)}
+    .proj-meta h3{margin:0;font-size:16px}
+    .meta-small{color:var(--muted);font-size:13px}
+
+    aside .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+    .skill{background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;text-align:center;font-weight:600}
+
+    footer{margin-top:28px;color:var(--muted);text-align:center}
+
+    /* responsive */
+    @media (max-width:880px){main{grid-template-columns:1fr} .avatar{width:56px;height:56px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">SH</div>
+        <div>
+          <h1>Shreelakshmi Narasimha Hegde</h1>
+          <div class="lead">Android Developer — Kotlin · Jetpack Compose · Firebase</div>
+        </div>
+      </div>
+      <div class="cta">
+        <a class="btn" href="#projects">View Projects</a>
+    <a class="ghost" href="resume25.pdf" download>Download Resume</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="card">
+          <div class="section-title"><h2>About</h2></div>
+          <p>I build production-ready Android apps with a focus on clean architecture, smooth UI using Jetpack Compose, and robust backend integration using Firebase. I enjoy owning features end-to-end — authentication, payments, maps, and push notifications.</p>
+          <hr style="margin:16px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <div class="card" style="padding:12px;flex:1;min-width:180px">
+              <strong>Experience</strong>
+              <div class="meta-small">Junior Android Developer — Syntacticlogic<br>Oct 2024 — Present | Bengaluru</div>
+            </div>
+            <div class="card" style="padding:12px;min-width:160px">
+              <strong>Education</strong>
+              <div class="meta-small">MCA — Ramaiah Institute of Technology (CGPA 9.08)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="projects" style="margin-top:16px">
+          <div class="section-title"><h2>Selected Projects</h2></div>
+
+          <div class="projects">
+            <div class="project">
+              <div class="proj-thumb">App</div>
+              <div class="proj-meta">
+                <h3>ClanHub App — (Production)</h3>
+                <div class="meta-small">Kotlin · Jetpack Compose · Firebase · Razorpay · Google Maps</div>
+                <p class="meta-small">Full app with bookings, payments, maps, push notifications and multi-environment Gradle setup.</p>
+                <div style="margin-top:8px"><a class="ghost" href="https://play.google.com/store/apps/details?id=com.sts.clanhub&pcampaignid=web_share">Play Store</a> </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="proj-thumb">App</div>
+              <div class="proj-meta">
+                <h3>ClanHub Partner App — (Production)</h3>
+                <div class="meta-small">Kotlin · Jetpack Compose · Firebase</div>
+                <p class="meta-small">Service provider app to manage bookings, slots and payments.</p>
+                <div style="margin-top:8px"><a class="ghost" href="https://play.google.com/store/apps/details?id=com.sts.clanhub&pcampaignid=web_share">Play Store</a> </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="proj-thumb">SOS</div>
+              <div class="proj-meta">
+                <h3>SOS App</h3>
+                <div class="meta-small">Java · Firebase · XML</div>
+                <p class="meta-small">Emergency alert app with real-time location tracking and distress messaging.</p>
+                <div style="margin-top:8px"><a class="ghost" href="https://github.com/Shreelakshmi-Narasimha/SOS.git">View Repo</a></div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="proj-thumb">IoT</div>
+              <div class="proj-meta">
+                <h3>Voice-Controlled Emergency System</h3>
+                <div class="meta-small">Python · Raspberry Pi · Twilio</div>
+                <p class="meta-small">Voice recognition + GPS alert system using Raspberry Pi and Twilio SMS integration.</p>
+                <div style="margin-top:8px"><a class="ghost" href="https://github.com/Shreelakshmi-Narasimha/Voice_controlled_emergency_alert_system.git">View Repo</a></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <div class="section-title"><h2>Contact</h2></div>
+          <p class="meta-small">Bengaluru, Karnataka · +91-9964300914 · shreelakshmihegde.1@gmail.com</p>
+          <p class="meta-small">Links: <a class="ghost" href="https://www.linkedin.com/in/shreelakshmi-hegde-122742217">LinkedIn</a> <a class="ghost" href="https://github.com/Shreelakshmi-Narasimha">GitHub</a> <a class="ghost" href="#">Website</a></p>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <div class="section-title"><h3>Skills</h3></div>
+          <div class="skills">
+            <div class="skill">Kotlin</div>
+            <div class="skill">Jetpack Compose</div>
+            <div class="skill">Firebase</div>
+            <div class="skill">Google Maps</div>
+            <div class="skill">Razorpay</div>
+            <div class="skill">Android SDK</div>
+            <div class="skill">Java</div>
+            <div class="skill">MVVM</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title"><h3>Education</h3></div>
+          <div class="meta-small"><strong>MCA</strong><br>Ramaiah Institute of Technology — CGPA 9.08</div>
+          <hr style="margin:12px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
+          <div class="meta-small"><strong>Bachelor</strong><br>Dr. A. V. Baliga College — 93.69%</div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title"><h3>Certificates</h3></div>
+          <div class="meta-small" href="https://coursera.org/share/db6809b935bdb9badb67a72616ecd3ba">Meta Android Developer — Coursera</div>
+        </div>
+
+      </aside>
+    </main>
+
+    <footer>
+      <div class="meta-small">© <span id="year"></span> Shreelakshmi Hegde — Built with ❤️ · Hosted on GitHub Pages</div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
